@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Design</title>
+    <link rel="stylesheet" href="build/CSS/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <script src="https://kit.fontawesome.com/10698468cb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="py-10 px-5 md:px-10">
+        <div class="flex justify-between items-center pb-2">
+            <img src="build/IMG/Logo.png" alt="The logo" class="h-7">
+            <div class="hidden md:flex gap-5 hover:text-black text-zinc-600">
+                <a class="hover:text-black text-zinc-600" href="#Home">Home</a>
+                <a class="hover:text-black text-zinc-600" href="#Services">Services</a>
+                <a class="hover:text-black text-zinc-600" href="#">Contact</a>
+                <a class="hover:text-black text-zinc-600" href="#">Support</a>
+            </div>
+            <div class="flex items-center gap-5">
+                <button class="bg-zinc-800 text-white px-5 py-2 rounded-sm text-xs">Sign Up</button>
+                <div>
+                    <div class="md:hidden"><i class="fa-solid fa-bars" id="open"></i></div>
+                    <div><i class="fa-solid fa-xmark" id="close" style="display: none;"></i></div>
+                </div>
+            </div>
+        </div>
+        <div id="list" class="justify-center gap-2 p-4 hidden border-y-2 ">
+            <a class="hover:text-black text-zinc-600" href="#Home">Home</a>
+            <a class="hover:text-black text-zinc-600" href="#Services">Services</a>
+            <a class="hover:text-black text-zinc-600" href="#">Contact</a>
+            <a class="hover:text-black text-zinc-600" href="#">Support</a>
+        </div>
+    </nav>
+    <header id="Home" class="my-5 md:mb-10 mx-5 md:mx-10 relative ">
+        <div class="grid gap-10">
+            <div class="flex gap-5 md:gap-10 justify-between items-start">
+                <div class="w-9/12 md:w-10/12 grid gap-2 md:gap-7">
+                    <h1 class="text-3xl md:text-5xl font-bold lg:text-7xl">Interior Design</h1>
+                    <p class="text-[8px] md:text-base lg:text-xl w-10/12">Step into a world where the art of Interior
+                        Design is meticulously crafted to bring
+                        together timeless elegance and cutting-edge modern Innovation, Allowing you to transform your
+                        living
+                        spaces into the epitome of luxury and sophistication
+                    </p>
+                </div>
+                <img src="build/IMG/Image 1.png" class="w-2/6" alt="IMG">
+            </div>
+            <div class="flex justify-between items-center pr-5 gap-5">
+                <div class="grid gap-10 md:gap-14 lg:gap-20 w-6/12">
+                    <button
+                        class="bg-zinc-800 text-white p-2 md:px-5 w-28 md:w-36 lg:w-40 rounded-sm text-[10px] md:text-base md:ml-10 lg:text-xl">Start
+                        Project</button>
+                    <div class="flex justify-around text-center text-[5px] md:text-sm">
+                        <div>
+                            <h6 class="text-base md:text-3xl"><span id="counter1">0</span>+</h6>
+                            <p>Project Complete</p>
+                        </div>
+                        <div>
+                            <h6 class="text-base md:text-3xl"><span id="counter2">0</span>+</h6>
+                            <p>Satisfied Clients</p>
+                        </div>
+                        <div>
+                            <h6 class="text-base md:text-3xl"><span id="counter3">0</span>+</h6>
+                            <p>Unique Styles</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-6/12 relative">
+                    <div
+                        class="absolute -top-2 md:-top-4 -left-2 md:-left-4 w-14 md:w-28 lg:w-36 h-14 md:h-28 lg:h-36 border-2 border-black -z-20">
+                    </div>
+                    <img src="build/IMG/Image 2.png" class="z-50" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="bg-zinc-800 w-12 md:w-16 lg:w-20 h-12 md:h-16 lg:h-20 flex justify-center items-center text-white absolute bottom-0 right-0"
+            id="top">
+            <i class="fa-solid fa-arrow-down-long"></i>
+        </div>
+        <div id="scroll-top"
+            class="bg-zinc-800 text-white w-12 h-12 flex justify-center items-center rounded-full fixed right-5 bottom-5">
+            <i class="fa-solid fa-arrow-up"></i>
+        </div>
+    </header>
+
+    <main>
+        <section id="Services" class="grid my-10 mt-20 px-5 md:px-10 gap-10">
+            <div class="flex items-center gap-3 text-3xl font-bold">
+                <img src="build/IMG/remove.png" alt="" class="w-10">
+                <h2>Our Services</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-5 md:gap-10">
+                <div class="flex gap-3">
+                    <div>
+                        <img src="build/IMG/lightbulb.png" class="w-10" alt="">
+                    </div>
+                    <div>
+                        <h6 class="font-bold">Lighting Design</h6>
+                        <p class="text-sm">Achieve the perfect balance of ambient, task, and accent lighting for a
+                            functional atmosphere
+                        </p>
+                    </div>
+                </div>
+                <div class="flex gap-3">
+                    <i class="fa-solid fa-house"></i>
+                    <div>
+                        <h6 class="font-bold">Interior Design</h6>
+                        <p class="text-sm">From concept to completion, we oversee every detail to bring your vision to
+                            life efficiently
+                        </p>
+                    </div>
+                </div>
+                <div class="flex gap-3">
+                    <i class="fa-solid fa-tree"></i>
+                    <div>
+                        <h6 class="font-bold">Outdoor Design</h6>
+                        <p class="text-sm">Celebrate the changing seasons with our seasonal outdoor decor services</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid md:grid-cols-2 gap-3 md:gap-10 py-20 px-5 md:px-10">
+            <img src="build/IMG/Mask group.png" alt="IMG" class="">
+            <div class="grid gap-5">
+                <h2 class="text-3xl lg:text-5xl font-bold">Designing Your Dream With Brilliance</h2>
+                <p class="text-zinc-600 text-sm lg:text-lg">Elevate your spaces with bespoke interior designs that
+                    reflect your
+                    unique style and aspirations, crafted with precision and brilliance for an unforgettable living
+                    experience</p>
+                <div class="text-sm grid gap-5">
+                    <div class="flex items-center justify-between border-b-2 pb-3">
+                        <p class="text-sm lg:text-lg font-bold">Living Room Interior Design</p>
+                        <i class="fa-solid fa-plus open"></i>
+                        <i class="fa-solid fa-minus close" style="display: none;"></i>
+                        <p class="hidden">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis eos hic
+                            rerum dolore quisquam, adipisci in nemo deleniti, harum sint vero alias animi ad ut
+                            consequatur cum ipsam possimus. Suscipit quae consectetur perferendis quos, corporis non
+                            distinctio. Impedit quos perspiciatis natus praesentium rerum eaque pariatur! Autem fugit ex
+                            quod cumque.</p>
+                    </div>
+                    <div class="flex items-center justify-between border-b-2 pb-3">
+                        <p class="text-sm lg:text-lg font-bold">Commercial Office Room Interior Design</p>
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-minus" style="display: none;"></i>
+                        <p class="hidden">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis eos hic
+                            rerum dolore quisquam, adipisci in nemo deleniti, harum sint vero alias animi ad ut
+                            consequatur cum ipsam possimus. Suscipit quae consectetur perferendis quos, corporis non
+                            distinctio. Impedit quos perspiciatis natus praesentium rerum eaque pariatur! Autem fugit ex
+                            quod cumque.</p>
+                    </div>
+                </div>
+                <button class="bg-zinc-800 text-white px-5 py-3 rounded-sm text-xs w-36 h-12">Learn More</button>
+            </div>
+        </section>
+
+        <section class="py-20 px-5 md:px-10 grid gap-10 md:grid-cols-2">
+            <div class="grid gap-10">
+                <h2 class="text-3xl font-bold">Designing Your Dream in Three Simple Steps</h2>
+                <div class="grid gap-5">
+                    <div class="flex gap-7">
+                        <div class="flex flex-col gap-3 justify-center items-center">
+                            <div class="bg-zinc-800 w-10 h-10 text-white flex justify-center items-center rounded-full">
+                                <i class="fa-solid fa-rocket"></i>
+                            </div>
+                            <div class="w-0.5 h-16 bg-zinc-800"></div>
+                        </div>
+                        <div class="grid gap-2">
+                            <h3 class="font-bold text-lg lg:text-3xl">Start Project</h3>
+                            <p class="text-sm lg:text-lg">Embark on your design adventure by initiating your project.
+                                Share your vision and set the stage for a bespoke design experience</p>
+                        </div>
+                    </div>
+                    <div class="flex  gap-7">
+                        <div class="flex flex-col gap-3 justify-center items-center">
+                            <div class="bg-zinc-800 w-10 h-10 flex justify-center items-center rounded-full"> <img
+                                    src="build/IMG/lightbulb.png" alt="" class="w-5" style="filter: invert(100%);"> </div>
+                            <div class="w-0.5 h-16 bg-zinc-800"></div>
+                        </div>
+                        <div class="grid gap-2">
+                            <h3 class="font-bold text-lg lg:text-3xl">Craft</h3>
+                            <p class="text-sm lg:text-lg">Collaborate closely to achieve design excellence refining your
+                                vision and crafting brilliance into every aspect of your space</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-7">
+                        <div>
+                            <div class="bg-zinc-800 w-10 h-10 text-white flex justify-center items-center rounded-full">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg lg:text-3xl">Execute</h3>
+                            <p class="text-sm lg:text-lg">Witness your vision becoming a reality as we execute the
+                                design plan with precision. Celebrate the joy of your newly transformed space</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="build/IMG/Image.png" alt="">
+        </section>
+
+        <section class="my-20 mx-5 md:mx-10 relative">
+            <div class="grid gap-5">
+                <div class="grid grid-cols-2 gap-5">
+                    <img src="build/IMG/Mask group (1).png" alt="">
+                    <h2 class="font-bold md:text-3xl lg:text-4xl">What Our Customers Say About Us</h2>
+                </div>
+                <div class="flex gap-3 md:gap-8 text-xs md:text-base">
+                    <div class="bg-zinc-100 p-2 w-5 md:w-10 h-5 md:h-10 flex justify-center items-center"><i
+                            class="fa-solid fa-arrow-left"></i></div>
+                    <div class="bg-zinc-100 p-2 w-5 md:w-10 h-5 md:h-10 flex justify-center items-center"><i
+                            class="fa-solid fa-arrow-right"></i></div>
+                </div>
+            </div>
+            <div class="absolute bottom-0 right-0 w-10/12 h-5/6 flex gap-2 pt-5 md:pt-8 lg:pt-12">
+                <div class="bg-zinc-900 text-white p-5 grid md:gap-5 text-[6px] md:text-base lg:text-xl w-1/2">
+                    <div class="text-lg md:text-5xl lg:text-7xl"><i class="fa-solid fa-quote-left"></i></div>
+                    <p>Working with your design team was an absolute pleasure. The attention to detail and
+                        creativity exceeded my expectations. Thank you for making my home beautiful!</p>
+                    <div class="flex items-center gap-3">
+                        <img src="build/IMG/Mask group (2).png" alt="" class="h-1/4 md:h-1/2">
+                        <div class="grid gap-1">
+                            <p>Sophie Carter</p>
+                            <p class="text-[6px] md:text-sm lg:text-lg text-zinc-400">New York, USA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-zinc-900 text-white p-5 grid md:gap-5 text-[6px] md:text-base lg:text-xl w-1/2">
+                    <div class="text-lg md:text-5xl lg:text-7xl"><i class="fa-solid fa-quote-left"></i></div>
+                    <p>Exceptional service! From the initial consultation to the final reveal, your team
+                        demonstrated
+                        professionalism and a keen eye for design. Highly recommend!</p>
+                    <div class="flex items-center gap-3">
+                        <img src="build/IMG/Mask group (2).png" alt="" class="h-1/4  md:h-1/2">
+                        <div class="grid gap-1">
+                            <p>James Bennett</p>
+                            <p class="text-[6px] text-zinc-400 md:text-sm lg:text-lg ">Toronto, Canada</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 px-10 md:px-10 flex justify-center items-center text-cente relative text-center">
+            <div class="grid gap-5 w-9/12 md:w-1/2">
+                <h4 class="text-xl md:text-2xl font-bold">Subscribe to Our Newsletter for Design Insights</h4>
+                <p class="text-sm md:text-base">Be the first to discover trends, inspirations, and special offers as we
+                    bring the world of design
+                    directly to your inbox</p>
+            </div>
+            <div
+                class="flex flex-col md:flex-row justify-between items-center gap-3 absolute bg-white p-2 md:pl-5 -bottom-10 md:-bottom-6 w-1/2 text-xs shadow-md">
+                <div class="flex gap-2 items-center text-zinc-400 w-10/12">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" name="email" id="email" placeholder="Enter your email address">
+                </div>
+                <button class="bg-zinc-800 text-white px-5 py-3 rounded-sm text-xs w-24">Subscribe</button>
+            </div>
+        </section>
+    </main>
+
+    <footer
+        class="bg-zinc-900 py-24 md:py-20 px-5 md:px-10 text-white text-xs md:text-sm grid grid-cols-2 md:grid-cols-4 items-center gap-10">
+        <div class=" grid gap-5">
+            <img src="build/IMG/Logo.png" alt="The logo" class="w-1/2" style="filter: invert(100%);">
+            <p class="text-zinc-300"> VivaDecor your premier destination for luxury and modern interior design</p>
+            <div class="flex gap-3">
+                <a class="bg-zinc-600 p-2" href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a class="bg-zinc-600 p-2" href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a class="bg-zinc-600 p-2" href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a class="bg-zinc-600 p-2" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class=" grid gap-5">
+            <p class="font-bold">Our Services</p>
+            <a class="text-zinc-300" href="#">Interior design</a>
+            <a class="text-zinc-300" href="#">Outdoor design</a>
+            <a class="text-zinc-300" href="#">Lightning design</a>
+            <a class="text-zinc-300" href="#">Office design</a>
+        </div>
+        <div class=" grid gap-5">
+            <p class="font-bold">Our Services</p>
+            <a class="text-zinc-300" href="#">Reviews</a>
+            <a class="text-zinc-300" href="#">Careers</a>
+            <a class="text-zinc-300" href="#">Pricing</a>
+            <a class="text-zinc-300" href="#">Press inquires</a>
+        </div>
+        <div class=" grid gap-5">
+            <p class="font-bold">Our Services</p>
+            <p class="text-zinc-300">info@vivadecor.com</p>
+            <p class="text-zinc-300">Design Avenue Cityville, CA 90210 United States</p>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="build/JavaScript/script.js"></script>
+</body>
+
+</html>
