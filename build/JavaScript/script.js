@@ -54,7 +54,7 @@ const counterInterva3 = setInterval(increment3,interval)
 // scroll to top
 
 window.addEventListener('scroll', function() {
-    if (this.scrollY > 200) {
+    if (this.scrollY > 400) {
         document.getElementById('scroll-top').style.display = 'flex';
     } else {
         document.getElementById('scroll-top').style.display = 'none';
